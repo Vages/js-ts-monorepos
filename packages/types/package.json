@@ -7,9 +7,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc -b ."
+    "build": "tsc -b .",
+    "clean": "rimraf dist *.tsbuildinfo"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
     "typescript": "^4.0.3"
   }
 }
