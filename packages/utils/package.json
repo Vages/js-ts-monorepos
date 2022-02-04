@@ -4,7 +4,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "access": "public",
+    "access": "public"
+  },
+  "scripts": {
     "build": "tsc --build .",
     "clean": "rimraf dist *.tsbuildinfo",
     "test": "jest"
