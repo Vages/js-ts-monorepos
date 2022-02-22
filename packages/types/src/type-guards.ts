@@ -6,18 +6,18 @@ import { IChannel, IMessage, ITeam } from "./types";
  * Check whether a given value is an array where
  * each member is of a specified type
  *
- * @param arr - array to check
+ * @param array - array to check
  * @param check - type guard to use when evaluating each item
  * @public
  */
 export function isTypedArray<T>(
-  arr: unknown,
+  array: unknown,
   check: (x: any) => x is T
-): arr is T[] {
-  if (!Array.isArray(arr)) return false;
-  const mismatch = arr.filter((item) => !check(item));
-  if (mismatch.length > 0) return false;
-  return true;
+): array is T[] {
+  if (!Array.isArray(array)) {
+    return false;
+  }
+  return !array.some((item) => !check(item));
 }
 
 /**
