@@ -1,6 +1,6 @@
 {
   "name": "@shlack/utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
@@ -26,5 +26,6 @@
   "dependencies": {
     "date-fns": "^2.28.0",
     "react": "^17.0.2"
-  }
+  },
+  "gitHead": "9a30ddccca7ad9a84605c9400b7ff6ded20ebf93"
 }
